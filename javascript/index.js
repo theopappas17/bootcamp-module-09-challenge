@@ -12,9 +12,10 @@ inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your user name?',
-      name: 'username',
+      message: 'Who is the author(s) of this project?',
+      name: 'author',
     },
+  ])
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
