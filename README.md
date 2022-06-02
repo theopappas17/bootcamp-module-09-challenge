@@ -1,1 +1,2 @@
 # bootcamp-module-09-challenge
+For this challenge, we are to create an application with Node.js that takes in input from a user and generates a generic Readme that the user can then use as a starter base for future projects.
