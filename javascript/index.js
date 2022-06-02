@@ -8,6 +8,13 @@ const inquirer = require('inquirer');
 
 // TODO: Create an array of questions for user input
 // Started writing questions using the syntax required by Inquirer
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      message: 'What is your user name?',
+      name: 'username',
+    },
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}

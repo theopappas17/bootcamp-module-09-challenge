@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "inquirer": "^8.2.4"
-  }
+  },
+  "name": "bootcamp-module-09-challenge",
+  "description": "For this challenge, we are to create an application with Node.js that takes in input from a user and generates a generic Readme that the user can then use as a starter base for future projects.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theopappas17/bootcamp-module-09-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theopappas17/bootcamp-module-09-challenge/issues"
+  },
+  "homepage": "https://github.com/theopappas17/bootcamp-module-09-challenge#readme"
 }
