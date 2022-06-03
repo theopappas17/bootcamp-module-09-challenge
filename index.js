@@ -4,7 +4,7 @@
 const inquirer = require("inquirer");
 
 //Need my generateMarkdown.js
-// const generateMarkdown = require("./generateMarkdown");
+const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 // Started writing questions using the syntax required by Inquirer
@@ -37,5 +37,5 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.log(answers);
+    generateMarkdown(answers);
   });
