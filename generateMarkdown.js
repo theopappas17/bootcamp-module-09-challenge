@@ -1,7 +1,7 @@
 // Need the File System module built into Node.js
 const fs = require("fs");
 
-module.exports = writeToFile
+module.exports = (data) => {
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -21,5 +21,4 @@ function generateMarkdown(data) {
 
 `;
 }
-
-module.exports = generateMarkdown;
+}

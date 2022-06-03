@@ -2,6 +2,8 @@
 
 //Need Inquirer module that is part of npm project
 const inquirer = require("inquirer");
+
+//Need my generateMarkdown.js
 const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -19,7 +21,7 @@ inquirer
   });
 
 // TODO: Create a function to write README file
-function writeToFile({ name }) {
+function writeToFile("README.md", md, () => {
   console.log(data);
 }
 
