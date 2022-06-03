@@ -19,7 +19,11 @@ If you have any questions about my project, you can reach me through github at $
 ###Licenses
 The following license is in force for this project: ${license}.
     `;
-};
+// TODO: Create a function to write README file
+fs.writeToFile("GENERICREADME.md", md, (err) => {
+  if (err) throw err;
+  console.log("README generated.");
+});
 
 // // TODO: Create a function that returns a license badge based on which license is passed in
 // // If there is no license, return an empty string

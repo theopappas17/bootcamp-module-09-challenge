@@ -4,7 +4,7 @@
 const inquirer = require("inquirer");
 
 //Need my generateMarkdown.js
-const generateMarkdown = require("./generateMarkdown");
+// const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 // Started writing questions using the syntax required by Inquirer
@@ -12,42 +12,30 @@ inquirer
   .prompt([
     {
       type: "input",
-      message: "Who is the author(s) of this project?",
       name: "author",
+      message: "Who is the author(s) of this project?",
     },
     {
-        type: "input",
-        message: "What is the name of this project?",
-        name: "project",
-      },
-      {
-        type: "input",
-        message: "What is your github address?",
-        name: "gitaddress",
-      },
-      {
-        type: "input",
-        message: "What is your email address?",
-        name: "emailaddress",
-      },
-      {
-        type: "input",
-        name: "license",
-        message: "What license shall you use?",
-      },
+      type: "input",
+      name: "project",
+      message: "What is the name of this project?",
+    },
+    {
+      type: "input",
+      name: "gitaddress",
+      message: "What is your github address?",
+    },
+    {
+      type: "input",
+      name: "emailaddress",
+      message: "What is your email address?",
+    },
+    {
+      type: "input",
+      name: "license",
+      message: "What license shall you use?",
+    },
   ])
-  .then((data) => {
-    writeToFile(data);
+  .then((answers) => {
+    console.log(answers);
   });
-
-// TODO: Create a function to write README file
-fs.writeToFile("GENERICREADME.md", md, (err) => {
-    if (err) throw err;
-  console.log("README generated.")
-})
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
